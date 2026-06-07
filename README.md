@@ -1,84 +1,80 @@
-# AuditIQ — AI-Powered Audit Intelligence Platform
+# AuditIQ Enterprise — AI-Powered Audit Intelligence Platform
 
-AuditIQ is a working data and AI portfolio project that converts audit/security control findings into risk scores, dashboards, data quality insights, management summaries and generated audit reports.
+AuditIQ Enterprise is a working Streamlit application that transforms cloud security, governance, compliance and data quality findings into risk scores, executive dashboards, remediation priorities and audit-ready reports.
 
-The project is designed to run for free using GitHub + Streamlit Community Cloud. It does not require BigQuery, OpenAI, Gemini or paid hosting.
+## Live App
 
-## What the project demonstrates
-
-- Data engineering thinking: ingestion, validation, transformation and scoring
-- Security governance: audit findings, control domains, regulatory impact and evidence status
-- Analytics engineering: dashboards, risk scoring, control reporting and remediation insights
-- AI product thinking: an audit report writer and a data-aware assistant built without paid APIs
-
-## Live App Features
-
-- Upload CSV or use included sample audit findings data
-- Filter by severity, status, control domain and regulatory impact
-- Calculate audit readiness score
-- Score each finding using a risk engine
-- Detect data quality issues such as missing evidence, overdue remediation and duplicate IDs
-- Generate executive audit reports
-- Ask questions about the audit dataset through a free data-aware assistant
-
-## Repository Structure
+Deploy on Streamlit Community Cloud using:
 
 ```text
-app/
-  main.py               Streamlit application
-  risk_engine.py        Risk scoring logic
-  data_quality.py       Data validation checks
-  report_writer.py      Audit report generation
-  audit_assistant.py    Free data-aware Q&A assistant
-
-data/
-  sample_audit_findings.csv
-
-reports/
-  sample_executive_audit_report.md
-
-notebooks/
-  audit_intelligence_analysis.ipynb
+app/main.py
 ```
 
-## How to Run Locally
+## What this project demonstrates
+
+- Data ingestion from audit/security CSV files
+- Data quality validation and audit-readiness checks
+- Risk scoring engine for control findings
+- Executive dashboard with risk analytics
+- Architecture view for solution design
+- Report writer for audit outputs
+- Free data-aware Ask AuditIQ assistant
+- Findings explorer with filters
+
+## Architecture
+
+```text
+Data Sources
+  ↓
+Ingestion Layer
+  ↓
+Validation Layer
+  ↓
+Risk Intelligence Engine
+  ↓
+Experience Layer
+  ↓
+Audit Output
+```
+
+## Run locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app/main.py
 ```
 
-## Free Deployment
-
-Deploy this repository on Streamlit Community Cloud:
-
-1. Push this folder to a new GitHub repository.
-2. Go to Streamlit Community Cloud.
-3. Sign in with GitHub.
-4. Click **New app**.
-5. Select the repository.
-6. Set main file path to:
+## Repository structure
 
 ```text
-app/main.py
+app/
+  main.py
+  risk_engine.py
+  data_quality.py
+  report_writer.py
+  audit_assistant.py
+
+data/
+  sample_audit_findings.csv
+
+notebooks/
+  audit_intelligence_analysis.ipynb
+
+reports/
+  sample_executive_report.md
+
+requirements.txt
+README.md
 ```
 
-7. Click **Deploy**.
+## Portfolio description
 
-## Sample Questions for Ask AuditIQ
+**AuditIQ Enterprise** is a data-driven audit intelligence platform that converts cloud security, governance and data quality findings into actionable risk insights, executive reporting, remediation intelligence and audit-ready evidence views.
 
-- Which applications have the highest audit risk?
-- What are the overdue findings?
-- Summarise evidence gaps.
-- What is the GDPR impact?
-- Which control domains have the highest risk?
-- Generate a management summary.
-
-## Future Enhancements
+## Future enhancements
 
 - BigQuery connector
-- Gemini/OpenAI powered RAG assistant
 - PDF report export
-- User authentication
-- Cloud Run deployment
-- Automated data ingestion pipeline
+- Gemini/OpenAI powered assistant
+- Authentication
+- Automated evidence ingestion
