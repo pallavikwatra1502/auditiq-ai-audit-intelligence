@@ -1,84 +1,117 @@
-# AuditIQ Enterprise — AI-Powered Audit Intelligence Platform
+# AuditIQ Enterprise
 
-AuditIQ Enterprise is a working Streamlit application that transforms cloud security, governance, compliance and data quality findings into risk scores, executive dashboards, remediation priorities and audit-ready reports.
+AI-powered audit intelligence platform for cloud security, data governance, compliance monitoring and executive reporting.
 
-# Live Demo
+## Live Demo
 
-🚀 https://auditiq-ai-audit-intelligence.streamlit.app/
+🚀 Streamlit App: https://auditiq-ai-audit-intelligence.streamlit.app/
 
-## Live App
+## Overview
 
-Deploy on Streamlit Community Cloud using:
+AuditIQ Enterprise transforms audit findings into actionable risk insights, executive dashboards, governance reporting and audit-ready reports.
 
-```text
-app/main.py
-```
+The platform enables teams to:
 
-## What this project demonstrates
+* Assess audit readiness
+* Prioritise remediation activities
+* Monitor governance controls
+* Track compliance exposure
+* Generate executive reports
+* Analyse cloud security and data quality risks
 
-- Data ingestion from audit/security CSV files
-- Data quality validation and audit-readiness checks
-- Risk scoring engine for control findings
-- Executive dashboard with risk analytics
-- Architecture view for solution design
-- Report writer for audit outputs
-- Free data-aware Ask AuditIQ assistant
-- Findings explorer with filters
+---
 
-## Architecture
+## Key Features
 
-```text
+### Executive Dashboard
+
+* Audit readiness scoring
+* Critical and high-risk findings tracking
+* Missing evidence monitoring
+* Regulatory exposure overview
+
+### Risk Intelligence Engine
+
+* Automated risk scoring
+* Severity-based prioritisation
+* Overdue remediation tracking
+* Risk trend analysis
+
+### Data Quality Framework
+
+* Completeness checks
+* Ownership validation
+* Duplicate detection
+* Evidence coverage analysis
+
+### Governance & Compliance
+
+* GDPR monitoring
+* ISO 27001 controls
+* PCI-DSS assessment
+* FCA compliance tracking
+
+### Audit Report Writer
+
+* Executive summaries
+* Compliance reports
+* Remediation plans
+* Board-level reporting
+
+### Ask AuditIQ
+
+* Interactive audit assistant
+* Risk insight generation
+* Governance recommendations
+* Executive summaries
+
+---
+
+## Solution Architecture
+
 Data Sources
-  ↓
-Ingestion Layer
-  ↓
-Validation Layer
-  ↓
-Risk Intelligence Engine
-  ↓
-Experience Layer
-  ↓
-Audit Output
-```
+→ Validation Layer
+→ Risk Scoring Engine
+→ Governance Layer
+→ Reporting Layer
+→ AuditIQ Assistant
 
-## Run locally
+---
 
-```bash
-pip install -r requirements.txt
-streamlit run app/main.py
-```
+## Technology Stack
 
-## Repository structure
+* Python
+* Streamlit
+* Pandas
+* Plotly
+* Data Governance
+* Cloud Security
+* Risk Analytics
+* Compliance Monitoring
 
-```text
-app/
-  main.py
-  risk_engine.py
-  data_quality.py
-  report_writer.py
-  audit_assistant.py
+---
 
-data/
-  sample_audit_findings.csv
+## Sample Screenshots
 
-notebooks/
-  audit_intelligence_analysis.ipynb
+Add screenshots here once captured:
 
-reports/
-  sample_executive_report.md
+* Executive Dashboard
+* Data Quality Dashboard
+* Report Writer
+* Ask AuditIQ Assistant
 
-requirements.txt
-README.md
-```
+---
 
-## Portfolio description
+## Author
 
-**AuditIQ Enterprise** is a data-driven audit intelligence platform that converts cloud security, governance and data quality findings into actionable risk insights, executive reporting, remediation intelligence and audit-ready evidence views.
+Pallavi Kwatra
 
-## Future enhancements
+Senior Data Engineer | Cloud Data & Governance Engineering
 
-- BigQuery connector
-- PDF report export
-- Gemini/OpenAI powered assistant
-- Authentication
-- Automated evidence ingestion
+GitHub: https://github.com/PALLAVIKWATRA1502
+
+---
+
+## Live Application
+
+https://auditiq-ai-audit-intelligence.streamlit.app/
